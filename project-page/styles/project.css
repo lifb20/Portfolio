@@ -38,12 +38,14 @@ a {
     border-radius: 10px;
     /* #E3EFF8 */
     border-color: #5B9BD5;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
 
     transition: border-color 0.5s;
 
     display: flex;
     justify-content: center;
     overflow: hidden;
+
 
 }
 
