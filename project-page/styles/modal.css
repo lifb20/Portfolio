@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Helvetica;
+    background-color: rgb(235, 234, 234);
+}
+
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0,0,0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    margin-top: -100px;
+    background: white;
+    flex: 1;
+    max-width: 500px;
+
+    text-align: center;
+    height: 300px;
+}
