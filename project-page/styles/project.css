@@ -22,6 +22,7 @@ a {
 
 .grid {
     margin: 150px 12% 0 12%;
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* background-color: lightgray; */
@@ -42,7 +43,7 @@ a {
 
     transition: border-color 0.5s;
 
-    display: flex;
+    display: none;
     justify-content: center;
     overflow: hidden;
 
