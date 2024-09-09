@@ -4,6 +4,14 @@ body {
     background-color: rgb(235, 234, 234);
 }
 
+p {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* .green {
     background-color: lightgreen;
 }
@@ -26,6 +34,7 @@ body {
 
 .modal-container {
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100vw;
@@ -36,8 +45,13 @@ body {
     align-items: center;
 
     background-color: rgba(0,0,0, 0.3);
-    /* opacity: 0;
-    pointer-events: none; */
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+
+
     
 }
 
@@ -46,8 +60,9 @@ body {
     opacity: 1;
 }
 
+
 .modal {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.75);
     flex: 1;
 
     margin-top: -2.5vh;
@@ -59,6 +74,39 @@ body {
 
     display: flex;
     flex-direction: column;
+    position: relative;
+
+
+    opacity: 1;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(47, 114, 177);
+    box-shadow: 0 0 10px rgba(0,0,0, 0.8);
+}
+
+.close {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+
+    color: white;
+
+    background-color: rgb(47, 114, 177);
+    border-color: rgb(47, 114, 177);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0,0,0, 0.4);
+}
+
+.close:hover {
+    cursor: pointer;
+    color: rgb(47, 114, 177);
+    background-color: white;
+}
+
+.close:active {
+    background-color: rgb(241, 241, 241);
 }
 
 
@@ -66,7 +114,6 @@ body {
     min-height: 180px;
     margin: 20px;
     margin-bottom: 0;
-    
     display: flex;
 }
 
@@ -95,6 +142,7 @@ body {
     font-weight: 500;
     
     text-align: justify;
+    color: rgb(47, 114, 177);
 }
 
 .extra-container {
@@ -102,7 +150,6 @@ body {
 
     display: flex;
     justify-content: space-between;
-
     padding: 0 20px;
 }
 
@@ -113,9 +160,11 @@ body {
 
 .extra-text {
     margin: 0;
-    margin-top: 10px;
+    margin-top: 7px;
+    padding: 4px 0;
 
     font-size: 14px;
+    color: rgb(34, 34, 34);
 }
 
 .extra-text-right-cont {
@@ -132,6 +181,13 @@ body {
     font-size: 14px;
     display: inline;
     margin-left: 5px;
+
+    color: rgb(34, 34, 34);
+
+}
+
+.extra-text-right:hover {
+    color: rgb(47, 114, 177);
 }
 
 .git-icon {
@@ -146,8 +202,8 @@ body {
 
 .image-container {
     flex: 1;
-
     display: flex;
+    max-height: 180px;
 
 }
 
@@ -156,12 +212,17 @@ body {
     margin: 10px;
     border-radius: 20px;
     flex: 1;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(47, 114, 177);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
 
 .image {
     object-fit: cover;
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     transform: scale(1.5);
 }
 
@@ -195,6 +256,7 @@ body {
     margin-top: 0;
 
     font-size: 20px;
+    color: rgb(47, 114, 177);
 }
 
 .description-text {
@@ -205,6 +267,7 @@ body {
     text-align: justify;
 
     font-size: 15px;
+    color: rgb(34, 34, 34);
 }
 
 .info {
@@ -227,7 +290,8 @@ body {
 
     font-size: 18px;
 
-    text-decoration: underline;
+    color: rgb(47, 114, 177);
+    /* text-decoration: underline; */
 }
 
 .info-list {
@@ -240,4 +304,6 @@ body {
     margin: 0;
     margin-bottom: 5px;
     font-size: 14px;
+
+    color: rgb(34, 34, 34);;
 }

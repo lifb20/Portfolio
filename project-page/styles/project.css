@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    width: 100vw;
+    position: absolute;
 }
 
 p,
@@ -21,8 +23,8 @@ a {
 } */
 
 .grid {
-    margin: 150px 12% 0 12%;
-    position: absolute;
+    margin: 150px 12% 130px;
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     /* background-color: lightgray; */
@@ -33,7 +35,6 @@ a {
 .grid-box {
     min-width: 200px;
     height: 260px;
-
     border-style: solid;
     border-width: 3px;
     border-radius: 10px;
@@ -51,8 +52,6 @@ a {
 }
 
 
-
-
 .grid-box-content {
     border-radius: 10px;
     flex: 1;
@@ -62,9 +61,9 @@ a {
     transition: transform 1s;
 
 }
-
+/* 
 .grid-box:hover {
-    /* border-color: #E3EFF8; */
+    border-color: #E3EFF8;
 
     cursor: pointer;
 
@@ -75,22 +74,22 @@ a {
     .grid-box-background {
         transform: scale(1.05);
         filter: blur(0);
-        cursor: active;
+        cursor: pointer;
 
     }
 
     .grid-box-background-overlay {
         background-color: rgba(91, 155, 213, 0.5);
-        /* background-image: linear-gradient(to top right,rgba(227, 239, 248, 0.3), rgba(227, 239, 248, 0.7)) */
+        
     }
-}
-
+} 
+*/
 .grid-box-background {
     flex: 1;
     object-fit: cover;
     height: 100%;
     width: 100%;
-    /* filter: blur(0px); */
+    /* filter: blur(1px); */
 
     transition: transform 0.8s;
 }
@@ -114,17 +113,21 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     background-color: rgba(227, 239, 248, 0.5);
+
     /* background-image: linear-gradient(to bottom left,rgba(227, 239, 248, 0.3), rgba(227, 239, 248, 0.7)); */
 }
 
 .box-title {
-    margin-top: 100px;
-    margin-bottom: 0;
+    /* margin-top: 100px;
+    margin-bottom: 0; */
     font-size: 40px;
     text-align: center;
     color: #4D4D4D;
     font-weight: 300;
+
+    /* background-color: lightpink; */
 
 }
