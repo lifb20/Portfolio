@@ -2,19 +2,20 @@ const toggleBox = document.getElementById('toggle_box');
 const filterContainer = document.getElementById('filter_container');
 const optionsContainer = document.getElementById('options_container');
 
-const sheet = document.styleSheets[0];
+const sheet = document.styleSheets[4];
 
 // Toggle Filter Box
 
+filterContainer.style.transition = 'margin-top 1s ease, opacity 0.5s ease';
 
 toggleBox.addEventListener('mouseenter', () => {
     filterContainer.style.marginTop = '0px';
-    optionsContainer.style.boxShadow = '2px 5px 5px rgba(0,0,0, 0.5)'
+    optionsContainer.style.boxShadow = '2px 5px 5px rgba(0,0,0, 0.5)';
 });
 
 optionsContainer.addEventListener('mouseenter', () => {
     filterContainer.style.marginTop = '0px';
-    optionsContainer.style.boxShadow = '2px 5px 5px rgba(0,0,0, 0.5)'
+    optionsContainer.style.boxShadow = '2px 5px 5px rgba(0,0,0, 0.5)';
 });
 
 toggleBox.addEventListener('mouseleave', () => {

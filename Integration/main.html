@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Main</title>
+
+    <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/filter.css">
+    
+
+
+<body>
+
+    <!-- About Page -->
+    <div class="about-page-container" id="about_page">
+        <div class="about-container salmon">
+            <div class="content-cont">
+                <div class="pic-link-cont green">
+                    <div class="pic-cont blue">
+                        <img class="profile-img" alt="Picture of Liam" src="img/smile.jpg" style="width: 80%">
+                    </div>
+                    <div class="link-cont green">
+                        <a class="link-top link pink" href="documents/CV.pdf" target="_blank">
+                            <img class="CV-icon" src="icon/CV-icon.svg">
+                            <p class="link-text">CV</p>
+                        </a>
+                        <a class="link pink" href="https://github.com/lifb20" target="_blank">
+                            <img class="GH-icon" src="icon/github-icon.svg">
+                            <p class="link-text">GitHub</p> 
+                        </a>
+                        <a class="link pink" href="https://linkedin.com/in/lifbrowne" target="_blank">
+                            <img class="LI-icon" src="icon/linkedin-icon.svg">
+                            <p class="link-text">LinkedIn</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="title-text orange">
+                    <div class="name-cont">
+                        <p class="title-name">Liam Browne</p>
+                    </div>
+                    <div class="text-cont pink">
+                        <p class="welcome-header">Happy you're here, this is my story</p>
+                        <!-- <p class="about-sub-headers">Who am I?</p> -->
+                        <p class="about-text">
+                            I am a final year Electrical and Electronic Engineering student at Imperial College
+                            with a passion for anything technology. I have a particular interest in digital system design,
+                            deep learning, control and software engineering.
+                        </p>
+                        <p class="about-text">
+                            Being raised in multilingual househould and international environment means I tend to thrive the most
+                            in diverse settings.
+                        </p>
+                        <p class="about-text">
+                            I am a final year Electrical and Electronic Engineering student at Imperial College
+                            with a passion for anything technology. I have a particular interest in digital system design,
+                            deep learning, control and software engineering.
+                        </p>
+                        <p class="about-text">
+                            Being raised in multilingual househould and international environment means I tend to thrive the most
+                            in diverse settings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Page -->
+    <div class="projects-page-container blue" id="projects_page">
+        <div class="grid">
+            <div class="grid-box blue JS ALL">
+                <div class="grid-box-content green">
+                    <img class="grid-box-background" src="img/bluebell.jpeg">
+                    <div class="grid-box-background-overlay">
+                        <p class="box-title">JavaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="page-container" id="nav_page_container">
+
+        <!-- Filter Bar -->
+        <div class="filter-container green" id="filter_container">
+            <div class="filter-options-container blue" id="options_container">
+                <div class="checkbox-container green" id="checkbox_container">
+                    <div class="checkbox-column-container pink">
+                        <div class="checkbox-item-title blue">
+                            <p class="checkbox-title salmon">General:</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ NOHEAD" id="ALL">
+                            <p class="checkbox-text">All</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ NOHEAD" id="ARCHIVED">
+                            <p class="checkbox-text">Archive</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ NOHEAD" id="FEATURED">
+                            <p class="checkbox-text">Featured</p>
+                        </div>
+                        <p class="checkbox-title salmon">Type:</p>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ NOHEAD" id="INDIV">
+                            <p class="checkbox-text">Individual</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ NOHEAD" id="GROUP">
+                            <p class="checkbox-text">Group</p>
+                        </div>
+                    </div>
+                    <div class="checkbox-column-container green">
+                        <div class="checkbox-item-title blue">
+                            <p class="checkbox-title salmon">Language:</p>
+                            <input type="checkbox" class="checkbox_header" id="LANGUAGE_ALL">
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ LANGUAGE_ALL" id="CPP">
+                            <p class="checkbox-text">CPP</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ LANGUAGE_ALL" id="JAVA">
+                            <p class="checkbox-text">Java</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ LANGUAGE_ALL" id="JS">
+                            <p class="checkbox-text">JavaScript</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ LANGUAGE_ALL" id="MATLAB">
+                            <p class="checkbox-text">MATLAB</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ LANGUAGE_ALL" id="PYTHON">
+                            <p class="checkbox-text">Python</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ LANGUAGE_ALL" id="VERILOG">
+                            <p class="checkbox-text">Verilog HDL</p>
+                        </div>
+                    </div>
+                    <div class="checkbox-column-container pink">
+                        <div class="checkbox-item-title blue">
+                            <p class="checkbox-title salmon">Data Science:</p>
+                            <input type="checkbox" class="checkbox_header" id="DATA_ALL">
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ DATA_ALL" id="ML">
+                            <p class="checkbox-text">Machine Learning</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ DATA_ALL" id="DL">
+                            <p class="checkbox-text">Deep Learning</p>
+                        </div>
+
+                    </div>
+                    <div class="checkbox-column-container green">
+                        <div class="checkbox-item-title blue">
+                            <p class="checkbox-title salmon">Hardware:</p>
+                            <input type="checkbox" class="checkbox_header" id="HW_ALL">
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ HW_ALL" id="DD">
+                            <p class="checkbox-text">Digital Design</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ HW_ALL" id="FPGA">
+                            <p class="checkbox-text">FPGA</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ HW_ALL" id="ANAL">
+                            <p class="checkbox-text">Analogue Electronics</p>
+                        </div>
+                    </div>
+                    <div class="checkbox-column-container pink">
+                        <div class="checkbox-item-title blue">
+                            <p class="checkbox-title salmon">Full Stack:</p>
+                            <input type="checkbox" class="checkbox_header" id="FULLS">
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ FULLS" id="FRONTEND">
+                            <p class="checkbox-text">Front-End</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ FULLS" id="BACKEND">
+                            <p class="checkbox-text">Back-End</p>
+                        </div>
+                        <div class="checkbox-item blue">
+                            <input type="checkbox" class="checkbox_ FULLS" id="DB">
+                            <p class="checkbox-text">Databases</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-toggle-container pink">
+                <div class="toggle-box green" id="toggle_box">
+                    <div class="toggle-image-container blue">
+                        <img class="toggle-image" src="icon/filter.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-container blue">
+            <div class="nav-label-left">About</div>
+            <div class="nav-label-right">Projects</div>
+            <div class="moving-border" id="moving_border"></div>
+            <div class="landing-page pink" id="about">
+                i
+            </div>
+            <div class="project-page pink" id="projects">
+                <img class="nav-image" src="icon/projects-icon.svg">
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/page-transition.js" type="module"></script>
+    <script src="js/content.js" type="module"></script>
+    <script src="js/filter.js" type="module"></script>
+</body>
+</html>

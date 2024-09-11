@@ -1,0 +1,127 @@
+p,
+a {
+    font-family: Helvetica;
+    color: #4D4D4D;
+}
+
+/* .blue {
+    background-color: lightblue;
+}
+
+.pink {
+    background-color: lightpink;
+}
+
+.green {
+    background-color: lightgreen;
+} */
+
+.grid {
+    margin: 150px 12% 130px;
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* background-color: lightgray; */
+    row-gap: 130px;
+    column-gap: 130px;
+}
+
+.grid-box {
+    min-width: 200px;
+    height: 260px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    /* #E3EFF8 */
+    border-color: #5B9BD5;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+    transition: border-color 0.5s;
+
+    display: none;
+    justify-content: center;
+    overflow: hidden;
+
+
+}
+
+
+.grid-box-content {
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    transition: transform 1s;
+
+}
+/* 
+.grid-box:hover {
+    border-color: #E3EFF8;
+
+    cursor: pointer;
+
+    .box-title {
+        color: #E3EFF8;
+    }
+
+    .grid-box-background {
+        transform: scale(1.05);
+        filter: blur(0);
+        cursor: pointer;
+
+    }
+
+    .grid-box-background-overlay {
+        background-color: rgba(91, 155, 213, 0.5);
+        
+    }
+} 
+*/
+.grid-box-background {
+    flex: 1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    /* filter: blur(1px); */
+
+    transition: transform 0.8s;
+}
+
+/* .grid-box-content::before {
+    content: '';
+    ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.grid-box-background-overlay {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(227, 239, 248, 0.5);
+
+    /* background-image: linear-gradient(to bottom left,rgba(227, 239, 248, 0.3), rgba(227, 239, 248, 0.7)); */
+}
+
+.box-title {
+    /* margin-top: 100px;
+    margin-bottom: 0; */
+    font-size: 40px;
+    text-align: center;
+    color: #4D4D4D;
+    font-weight: 300;
+
+    /* background-color: lightpink; */
+
+}
