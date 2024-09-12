@@ -8,7 +8,7 @@ const filterBar = document.getElementById('filter_container');
 
 let toggle = 0;
 let transitioning = false;
-
+projectsPage.style.display = 'none';
 
 
 // projectsPage.style.transition = 'transform 1s ease';
