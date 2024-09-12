@@ -93,13 +93,13 @@ function switchToProjects(event){
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
-      document.body.style.backgroundColor = "lightyellow";
+    //   document.body.style.backgroundColor = "lightyellow";
       about.addEventListener('click', switchToAbout);
       projects.addEventListener('click', switchToProjects);
       navContainer.removeEventListener('click', switchToAbout);
       navContainer.removeEventListener('click', switchToProjects);
     } else {
-      document.body.style.backgroundColor = "lightpink";
+    //   document.body.style.backgroundColor = "lightpink";
       about.removeEventListener('click', switchToAbout);
       projects.removeEventListener('click', switchToProjects);
 

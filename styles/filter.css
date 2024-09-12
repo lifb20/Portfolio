@@ -1,12 +1,14 @@
 .filter-container {
-    position: relative;
+    position: absolute;
     flex-direction: column;
+    left: 0;
+    top: 0;
 
     min-height: 300px;
     min-width: 450px;
     /* max-width: 600px; */
 
-    z-index: 3;
+    z-index: 5;
     /* margin-top: -230px; */
 
 
@@ -38,6 +40,7 @@
     min-height: 230px;
     min-width: 100%;
     border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-color: white;
     display: flex;
     transition: box-shadow 1s ease;
@@ -133,8 +136,23 @@
 
 @media screen and (max-width: 768px){
     .filter-container {
-        display: none;
+        width: 100%;
     }
+
+
+
+}
+
+@media screen and (max-width: 570px){
+    .checkbox-item-title {
+        font-size: 14px;
+    }
+    
+    
+    .checkbox-text {
+        font-size: 12px;
+    }
+
 
 
 }

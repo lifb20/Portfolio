@@ -57,7 +57,7 @@ body {
 .page-container {
     width: 100%;
     position: fixed;
-    justify-content: space-between;
+    justify-content: end;
     display: flex;
     z-index: 2;
 
@@ -203,5 +203,19 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px){
+    .page-container {
+        justify-content: end;
+    }
 
+    .nav-container {
+        margin-right: 5%;
+    }
 
+    .nav-container:hover{
+        .nav-label-left,
+        .nav-label-right {
+            opacity: 0;
+        }
+    }
+}
