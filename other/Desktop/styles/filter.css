@@ -1,0 +1,126 @@
+.filter-container {
+    position: relative;
+    flex-direction: column;
+
+    min-height: 300px;
+    min-width: 450px;
+    /* max-width: 600px; */
+
+    z-index: 3;
+    /* margin-top: -230px; */
+
+
+    opacity: 0;
+    pointer-events: none;
+    margin-top: -230px;
+
+    transition: none;
+
+
+}
+
+/* .salmon {
+    background-color: lightsalmon;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.pink {
+    background-color: lightpink;
+} */
+
+.filter-options-container {
+    min-height: 230px;
+    min-width: 100%;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    display: flex;
+    transition: box-shadow 1s ease;
+    z-index: 1;
+    box-shadow: none;
+    /* box-shadow: 0 3px 5px rgba(0,0,0, 0.5); */
+}
+
+.checkbox-container {
+    flex: 1;
+    margin: 12px;
+
+    display: flex;
+}
+
+.checkbox-column-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-title {
+    margin: 0;
+    display: inline;
+}
+
+.checkbox-item {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item-title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.checkbox-text {
+    display: inline;
+    margin: 0;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.filter-toggle-container {
+    height: 70px;
+    display: flex;
+    margin-left: 20px;
+
+    z-index: 2;
+}
+
+.toggle-box {
+    height: 70px;
+    width: 70px;
+}
+
+.toggle-image-container {
+    height: 65px;
+    overflow: hidden;
+    width: 56px;
+    margin: 0 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    /* border-style: solid;
+    border-top-style: none;
+    border-width: 2px; */
+
+    background-color: white;
+
+    box-shadow: 0 5px 5px rgba(0,0,0, 0.5);
+}
+
+.toggle-image {
+    height: 100%;
+    width: 90%;
+    object-fit: fit;
+}

@@ -39,7 +39,7 @@ const project1 = {
     "info-list-three-items": ["item1", "item2", "item3"],
 }
 
-const content = [project1, project1, project1, project1, project1, project1, project1, project1, project1];
+const content = [project1];
 const contentObjects = content.map( contentItem => 
     new Project(contentItem)
 );
