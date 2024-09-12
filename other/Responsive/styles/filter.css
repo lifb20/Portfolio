@@ -124,3 +124,13 @@
     width: 90%;
     object-fit: fit;
 }
+
+/* Tablets */
+
+@media screen and (max-width: 768px){
+    .filter-container {
+        display: none;
+    }
+
+
+}
