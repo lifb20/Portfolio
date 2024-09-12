@@ -145,12 +145,12 @@
 
 @media screen and (max-width: 570px){
     .checkbox-item-title {
-        font-size: 14px;
+        font-size: 10px;
     }
     
     
     .checkbox-text {
-        font-size: 12px;
+        font-size: 8px;
     }
 
 
