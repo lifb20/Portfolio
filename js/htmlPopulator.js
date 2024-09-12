@@ -38,6 +38,7 @@ class Project {
         const close_modal = modal_container.getElementsByClassName('close');
 
         const projectsPage = document.getElementById('projects_page');
+        const modal = modal_container.getElementsByClassName('modal');
         const body = document.getElementById('body');
         
 
@@ -48,7 +49,6 @@ class Project {
             
             projectsPage.style.zIndex = '5';
             body.style.overflowY = 'hidden';
-
         });
 
         close_modal[0].addEventListener('click', () => {
@@ -56,6 +56,15 @@ class Project {
             projectsPage.style.zIndex = '0';
             body.style.overflowY = 'auto';
         });
+
+        modal_container.addEventListener('click', (event) => {
+            console.log(event);
+            if(!modal[0].contains(event.target)){
+                modal_container.classList.remove('show');
+                projectsPage.style.zIndex = '0';
+                body.style.overflowY = 'auto';
+            }
+        })
 
     }
 
