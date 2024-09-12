@@ -104,7 +104,7 @@ projects.addEventListener('click', () => {
         
 
         filterBar.style.opacity = '1';
-        filterBar.style.pointerEvents = 'auto';
+        filterBar.style.pointerEvents = 'none';
 
     }
 });

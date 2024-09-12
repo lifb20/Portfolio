@@ -24,6 +24,7 @@ a {
     /* background-color: lightgray; */
     row-gap: 100px;
     column-gap: 10%;
+    z-index: 0;
     
 }
 

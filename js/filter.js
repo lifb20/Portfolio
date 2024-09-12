@@ -21,6 +21,12 @@ optionsContainer.addEventListener('mouseenter', () => {
 toggleBox.addEventListener('mouseleave', () => {
     filterContainer.style.marginTop = '-230px';
     optionsContainer.style.boxShadow = 'none';
+
+    // addEventListener('click', () =>{
+    //   filterContainer.style.marginTop = '-230px';
+    //   optionsContainer.style.boxShadow = 'none';
+    // })
+
 });
 
 optionsContainer.addEventListener('mouseleave', () => {

@@ -11,12 +11,11 @@
 
 
     opacity: 0;
-    pointer-events: none;
     margin-top: -230px;
 
     transition: none;
 
-
+    pointer-events: none;
 }
 
 /* .salmon {
@@ -44,6 +43,9 @@
     transition: box-shadow 1s ease;
     z-index: 1;
     box-shadow: none;
+
+    pointer-events: auto;
+
     /* box-shadow: 0 3px 5px rgba(0,0,0, 0.5); */
 }
 
@@ -89,13 +91,15 @@
     height: 70px;
     display: flex;
     margin-left: 20px;
-
     z-index: 2;
+
+    pointer-events: none;
 }
 
 .toggle-box {
     height: 70px;
     width: 70px;
+    pointer-events: auto;
 }
 
 .toggle-image-container {

@@ -284,6 +284,7 @@ a {
 
     .name-cont-tablet {
         /* current-flex */
+        flex: 1;
         height: 70px;
         width: 100%;
 
@@ -332,4 +333,57 @@ a {
     }
 
 
+}
+
+@media screen and (max-width: 480px){
+
+  .name-cont-tablet {
+    text-align: center;
+  }
+  .pic-link-cont {
+    flex-direction: column;
+  }
+
+  .pic-cont {
+    min-height: auto;
+    margin-top: 10px;
+  }
+
+  .profile-img {
+  
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    min-width: auto;
+  }
+
+  .link-cont {
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+
+  .link {
+    min-width: auto;
+  }
+
+  .CV-icon {
+    height: 40px;
+    width: 44px;
+  }
+
+  .GH-icon {
+    height: 40px;
+    width: 44px;
+  }
+
+  .LI-icon {
+    height: 44px;
+    width: 44px;
+  }
+
+  .link-text {
+    display: none;
+  }
 }

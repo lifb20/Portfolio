@@ -38,16 +38,23 @@ class Project {
         const close_modal = modal_container.getElementsByClassName('close');
 
         const projectsPage = document.getElementById('projects_page');
+        const body = document.getElementById('body');
         
 
         open_modal.addEventListener('click', () => {
+            let currentScrollY = window.scrollY;
             modal_container.classList.add('show');
+            modal_container.style.marginTop = `${currentScrollY}px`;
+            
             projectsPage.style.zIndex = '5';
+            body.style.overflowY = 'hidden';
+
         });
 
         close_modal[0].addEventListener('click', () => {
             modal_container.classList.remove('show');
             projectsPage.style.zIndex = '0';
+            body.style.overflowY = 'auto';
         });
 
     }
