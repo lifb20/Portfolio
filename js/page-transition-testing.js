@@ -6,6 +6,7 @@ const projectsPage = document.getElementById('projects_page');
 const navPage = document.getElementById('nav_page_container');
 const filterBar = document.getElementById('filter_container');
 const navContainer = document.getElementById('nav_container');
+const body = document.getElementById('body');
 
 // // projectsPage.style.transition = 'transform 1s ease';
 let toggle = 0;
@@ -18,11 +19,14 @@ function switchToAbout(event){
         toggle = 0;
         transitioning = true;
 
+        body.style.maxHeight = '100vh';
+        body.style.overflowY = 'hidden';
+
         movingBorder.style.left = '3px';
 
         aboutPage.style.transform = 'translateX(0%)'
 
-
+        projectsPage.style.maxHeight = 'translateX(100%)';
         projectsPage.style.transform = 'translateX(100%)';
 
         const projectsFadeOut = new Promise((resolve, reject) => {
@@ -30,6 +34,10 @@ function switchToAbout(event){
                 projectsPage.style.display = 'none';
                 projectsPage.style.transition = 'none';
                 console.log('timeout');
+
+                body.style.maxHeight = 'auto';
+                body.style.overflowY = 'auto';
+
                 resolve();
             }, 1000);
 
@@ -50,7 +58,9 @@ function switchToProjects(event){
     if(toggle === 0 && !transitioning){
         toggle = 1;
         transitioning = true;
-        
+        body.style.maxHeight = '100vh';
+        body.style.overflowY = 'hidden';
+
         const projectsFadeIn = new Promise((resolve, reject) => {
                 projectsPage.style.display = 'flex';
                 projectsPage.style.transform = 'translateX(100%)';
@@ -67,6 +77,11 @@ function switchToProjects(event){
                 movingBorder.style.left = '133px';
                 aboutPage.style.transform = 'translateX(-100%)';
                 console.log('timeout 3');
+
+
+                body.style.maxHeight = 'auto';
+                body.style.overflowY = 'auto';
+
                 resolve();
             }, 20); // Small delay to ensure styles are applied correctly
         });
