@@ -40,7 +40,6 @@ class Project {
         const projectsPage = document.getElementById('projects_page');
         const modal = modal_container.getElementsByClassName('modal');
         const body = document.getElementById('body');
-        
 
         open_modal.addEventListener('click', () => {
             let currentScrollY = window.scrollY;
@@ -49,7 +48,18 @@ class Project {
             
             projectsPage.style.zIndex = '5';
             body.style.overflowY = 'hidden';
+            modal_container.style.overflowY = 'scroll';
+            let descriptionResize = modal_container.getElementsByClassName('description');
+            let newHeight;
+            if(window.innerWidth > "781"){
+                newHeight = Number(200) + Number(descriptionResize[0].clientHeight);
+            } else {
+                newHeight = Number(250) + Number(descriptionResize[0].clientHeight);
+            }
+            modal[0].style.minHeight = `${newHeight}px`;
+
         });
+
 
         close_modal[0].addEventListener('click', () => {
             modal_container.classList.remove('show');
@@ -85,17 +95,17 @@ class Project {
             modal.appendChild(closeButton)
 
             let modalImageTitleExtraContainer = document.createElement('div');
-            modalImageTitleExtraContainer.classList.add('modal-image-title-extra-cont');
+            modalImageTitleExtraContainer.classList.add('modal-image-title-extra-cont', 'green');
             modal.appendChild(modalImageTitleExtraContainer);
 
                 // titleExtra
                 let titleExtra = document.createElement('div');
-                titleExtra.classList.add('title-extra');
+                titleExtra.classList.add('title-extra', 'blue');
                 modalImageTitleExtraContainer.appendChild(titleExtra);
 
                     // titleExtra children
                     let titleContainer = document.createElement('div');
-                    titleContainer.classList.add('title-container');
+                    titleContainer.classList.add('title-container', 'green');
                     titleExtra.appendChild(titleContainer);
 
                         // titleExtra children
@@ -106,12 +116,12 @@ class Project {
 
                     
                     let extraContainer = document.createElement('div');
-                    extraContainer.classList.add('extra-container');
+                    extraContainer.classList.add('extra-container', 'salmon');
                     titleExtra.appendChild(extraContainer);
 
                         // extraLeft
                         let extraLeft = document.createElement('div');
-                        extraLeft.classList.add('extra-left');
+                        extraLeft.classList.add('extra-left', 'pink');
                         extraContainer.appendChild(extraLeft);
 
                             let extraSetting = document.createElement('p');
@@ -130,13 +140,13 @@ class Project {
                             extraLeft.appendChild(extraType);
 
                         // extraRight
-                        let extraRight = document.createElement('div');
+                        let extraRight = document.createElement('div', 'pink');
                         extraRight.classList.add('extra-right');
                         extraContainer.appendChild(extraRight);
 
                             if(jsonObject['gitHub']){
                                 let extraTextRightContainerOne = document.createElement('a');
-                                extraTextRightContainerOne.classList.add('extra-text-right-cont');
+                                extraTextRightContainerOne.classList.add('extra-text-right-cont', 'blue');
                                 extraTextRightContainerOne.href = jsonObject["gitHub-link"];
                                 extraTextRightContainerOne.target = "_blank";
                                 extraRight.appendChild(extraTextRightContainerOne);
@@ -154,7 +164,7 @@ class Project {
 
                             if(jsonObject['report']){
                                 let extraTextRightContainerTwo = document.createElement('a');
-                                extraTextRightContainerTwo.classList.add('extra-text-right-cont');
+                                extraTextRightContainerTwo.classList.add('extra-text-right-cont', 'blue');
                                 extraTextRightContainerTwo.href = jsonObject["report-link"];
                                 extraTextRightContainerTwo.target = "_blank";
                                 extraRight.appendChild(extraTextRightContainerTwo);
@@ -172,7 +182,7 @@ class Project {
 
                             if(jsonObject['website']){
                                 let extraTextRightContainerThree = document.createElement('a');
-                                extraTextRightContainerThree.classList.add('extra-text-right-cont');
+                                extraTextRightContainerThree.classList.add('extra-text-right-cont', 'blue');
                                 extraTextRightContainerThree.href = jsonObject["website-link"];
                                 extraTextRightContainerThree.target = "_blank";
                                 extraRight.appendChild(extraTextRightContainerThree);
@@ -189,11 +199,11 @@ class Project {
                             }
 
                 let imageContainer = document.createElement('div');
-                imageContainer.classList.add('image-container');
+                imageContainer.classList.add('image-container', 'blue');
                 modalImageTitleExtraContainer.appendChild(imageContainer);
                     
                     let imageContainerContainer = document.createElement('div');
-                    imageContainerContainer.classList.add('image-container-container');
+                    imageContainerContainer.classList.add('image-container-container', 'green');
                     imageContainer.appendChild(imageContainerContainer);
 
                         let modalImage = document.createElement('img');
@@ -202,15 +212,15 @@ class Project {
                         imageContainerContainer.appendChild(modalImage);
 
             let modalDescriptionAndInfoContainer = document.createElement('div');
-            modalDescriptionAndInfoContainer.classList.add('modal-description-and-info-cont');
+            modalDescriptionAndInfoContainer.classList.add('modal-description-and-info-cont', 'salmon');
             modal.appendChild(modalDescriptionAndInfoContainer);
                 
                 let description = document.createElement('div');
-                description.classList.add('description');
+                description.classList.add('description', 'blue');
                 modalDescriptionAndInfoContainer.appendChild(description);
 
                     let descriptionTextBox = document.createElement('div');
-                    descriptionTextBox.classList.add('description-text-box');
+                    descriptionTextBox.classList.add('description-text-box', 'white');
                     description.appendChild(descriptionTextBox);
 
                         let descriptionHeader = document.createElement('p');
@@ -220,27 +230,27 @@ class Project {
 
                         jsonObject['description'].forEach( (paragraph) => {
                             let descriptionText = document.createElement('p');
-                            descriptionText.classList.add('description-text');
+                            descriptionText.classList.add('description-text', 'pink');
                             descriptionText.innerHTML = paragraph;
                             descriptionTextBox.appendChild(descriptionText);
                         });
 
                 let info = document.createElement('div');
-                info.classList.add('info');
+                info.classList.add('info', 'pink');
                 modalDescriptionAndInfoContainer.appendChild(info);
 
                     let infoTextContainer = document.createElement('div');
-                    infoTextContainer.classList.add('info-text-container');
+                    infoTextContainer.classList.add('info-text-container', 'white');
                     info.appendChild(infoTextContainer);
 
                         if(jsonObject['info-list-one-toggle']){
                             let infoListHeaderOne = document.createElement('p');
-                            infoListHeaderOne.classList.add('info-text-header');
+                            infoListHeaderOne.classList.add('info-text-header', 'green');
                             infoListHeaderOne.innerHTML = jsonObject['info-list-one-title'];
                             infoTextContainer.appendChild(infoListHeaderOne);
 
                             let infoListOne = document.createElement('ul');
-                            infoListOne.classList.add('info-list');
+                            infoListOne.classList.add('info-list', 'blue');
                             infoTextContainer.appendChild(infoListOne);
 
                             jsonObject['info-list-one-items'].forEach( (item) =>{
@@ -252,12 +262,12 @@ class Project {
 
                         if(jsonObject['info-list-two-toggle']){
                             let infoListHeaderTwo = document.createElement('p');
-                            infoListHeaderTwo.classList.add('info-text-header');
+                            infoListHeaderTwo.classList.add('info-text-header', 'green');
                             infoListHeaderTwo.innerHTML = jsonObject['info-list-two-title'];
                             infoTextContainer.appendChild(infoListHeaderTwo);
 
                             let infoListTwo = document.createElement('ul');
-                            infoListTwo.classList.add('info-list');
+                            infoListTwo.classList.add('info-list', 'blue');
                             infoTextContainer.appendChild(infoListTwo);
 
                             jsonObject['info-list-two-items'].forEach( (item) =>{
@@ -269,12 +279,12 @@ class Project {
                         
                         if(jsonObject['info-list-three-toggle']){
                             let infoListHeaderThree = document.createElement('p');
-                            infoListHeaderThree.classList.add('info-text-header');
+                            infoListHeaderThree.classList.add('info-text-header', 'green');
                             infoListHeaderThree.innerHTML = jsonObject['info-list-three-title'];
                             infoTextContainer.appendChild(infoListHeaderThree);
 
                             let infoListThree = document.createElement('ul');
-                            infoListThree.classList.add('info-list');
+                            infoListThree.classList.add('info-list', 'blue');
                             infoTextContainer.appendChild(infoListThree);
 
                             jsonObject['info-list-three-items'].forEach( (item) =>{
