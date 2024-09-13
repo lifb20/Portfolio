@@ -66,8 +66,6 @@ function switchToProjects(event){
                 projectsPage.style.transform = 'translateX(0%)'; // Move into view
                 movingBorder.style.left = '133px';
                 aboutPage.style.transform = 'translateX(-100%)';
-                filterBar.style.opacity = '1';
-                filterBar.style.pointerEvents = 'none';
                 console.log('timeout 3');
                 resolve();
             }, 20); // Small delay to ensure styles are applied correctly
@@ -77,6 +75,8 @@ function switchToProjects(event){
         // Wait for a bit after the transition ends before allowing further actions
         return new Promise((resolve) => {
             setTimeout(() => {
+                filterBar.style.opacity = '1';
+                filterBar.style.pointerEvents = 'none';
                 transitioning = false;
                 console.log('Transition complete, flag reset');
                 resolve();
