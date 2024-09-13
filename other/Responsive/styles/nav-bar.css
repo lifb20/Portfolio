@@ -73,8 +73,8 @@ body {
     min-height: 70px;
     min-width: 200px;
 
-    margin-right: 75px;
-    margin-top: 5px;
+    right: 75px;
+    top: 5px;
     border-style: solid;
     border-color: #5B9BD5;
     border-width: 2px;
@@ -84,7 +84,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    position: relative;
+    position: absolute;
 
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
     
@@ -209,7 +209,8 @@ body {
     }
 
     .nav-container {
-        margin-right: 5%;
+        /* margin-right: 5%; */
+        right: 5%;
     }
 
     .nav-container:hover{
