@@ -19,8 +19,6 @@ function switchToAbout(event){
         toggle = 0;
         transitioning = true;
 
-        body.style.maxHeight = '100vh';
-        body.style.overflowY = 'hidden';
 
         movingBorder.style.left = '3px';
 
@@ -35,8 +33,6 @@ function switchToAbout(event){
                 projectsPage.style.transition = 'none';
                 console.log('timeout');
 
-                body.style.maxHeight = 'auto';
-                body.style.overflowY = 'auto';
 
                 resolve();
             }, 1000);
@@ -58,8 +54,6 @@ function switchToProjects(event){
     if(toggle === 0 && !transitioning){
         toggle = 1;
         transitioning = true;
-        body.style.maxHeight = '100vh';
-        body.style.overflowY = 'hidden';
 
         const projectsFadeIn = new Promise((resolve, reject) => {
                 projectsPage.style.display = 'flex';
@@ -78,9 +72,6 @@ function switchToProjects(event){
                 aboutPage.style.transform = 'translateX(-100%)';
                 console.log('timeout 3');
 
-
-                body.style.maxHeight = 'auto';
-                body.style.overflowY = 'auto';
 
                 resolve();
             }, 20); // Small delay to ensure styles are applied correctly
