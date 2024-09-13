@@ -114,9 +114,12 @@ body {
 
     border-style: solid;
     border-width: 2px;
-    border-color: #5B9BD5;
+    border-color: #a3d2fe;
+    background-color: #a3d2fe;
 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 
     transition: left 1s ease;
 }
@@ -170,6 +173,8 @@ body {
     align-items: center;
 
     transition: background-color 0.5s;
+
+    z-index: 2;
 
 }
 

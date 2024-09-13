@@ -9,6 +9,7 @@ const sheet = document.styleSheets[4];
 // Toggle Filter Box
 let filterOpen = 0;
 filterContainer.style.transition = 'margin-top 1s ease, opacity 0.5s ease';
+// filterContainer.style.transition = 'margin-top 1s ease';
 
 function openHover(event) {
   filterContainer.style.marginTop = '0px';
