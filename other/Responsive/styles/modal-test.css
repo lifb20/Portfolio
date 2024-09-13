@@ -5,7 +5,7 @@ p {
 a {
     text-decoration: none;
 }
-
+/* 
 .green {
     background-color: lightgreen;
 }
@@ -24,7 +24,7 @@ a {
 
 .white {
     background-color: whitesmoke;
-}
+} */
 
 .modal-container {
     position: fixed;
@@ -33,10 +33,11 @@ a {
     left: 0; */
     width: 100vw;
     height: 100vh;
+    max-height: 100%;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 
     background-color: rgba(0,0,0, 0.3);
     backdrop-filter: blur(10px);
@@ -60,10 +61,13 @@ a {
 .modal {
     background-color: rgba(255, 255, 255, 0.75);
     /* flex: 1; */
-    margin-top: -2.5vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
     min-width: 52vw;
-    min-height: 80vh;
+    max-width: 700px;
 
+    min-height: 80%;
+    max-height: 200%;
     border-radius: 20px;
 
     display: flex;
@@ -112,9 +116,9 @@ a {
 }
 
 .title-extra {
-    max-width: 70%;
-    min-width: 70%;
-
+    /* max-width: 70%;
+    min-width: 70%; */
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -195,7 +199,7 @@ a {
 }
 
 .image-container {
-    flex: 1;
+    /* flex: 1; */
     min-width: 200px;
     display: flex;
     max-height: 180px;
@@ -225,22 +229,18 @@ a {
     flex: 1;
     
     display: flex;
-    
     margin: 20px;
     margin-top: 20px;
 }
 
 .description {
-    min-width: 70%;
-    max-width: 70%;
-
+    width: 100%;
     display: flex;
 }
 
 .description-text-box {
     flex: 1;
     margin: 0 20px 20px 20px;
-    
 
     display: flex;
     flex-direction: column;
@@ -266,8 +266,7 @@ a {
 }
 
 .info {
-    flex: 1;
-
+    min-width: 200px;
     display: flex;
 }
 
@@ -301,4 +300,17 @@ a {
     font-size: 14px;
 
     color: rgb(34, 34, 34);;
+}
+
+@media screen and (max-width: 780px){
+
+
+    .modal {
+        max-width: 90vw;
+        /* min-height: auto; */
+        
+    }
+
+
+
 }
