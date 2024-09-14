@@ -41,19 +41,14 @@ class Project {
         const modal = modal_container.getElementsByClassName('modal');
         const body = document.getElementById('body');
 
+
+
         open_modal.addEventListener('click', () => {
-            let currentScrollY = window.scrollY;
-            modal_container.classList.add('show');
-            modal_container.style.marginTop = `${currentScrollY}px`;
-            
-            projectsPage.style.zIndex = '5';
-            body.style.overflowY = 'hidden';
-            modal_container.style.overflowY = 'scroll';
             let titleImageSize = modal_container.getElementsByClassName('modal-image-title-extra-cont');
             let descriptionSize = modal_container.getElementsByClassName('description');
             let infoSize = modal_container.getElementsByClassName('info');
-
             let newHeight;
+
             if(window.innerWidth > "650"){
                 newHeight = Number(200) + Number(descriptionSize[0].clientHeight);
             } else {
@@ -61,6 +56,16 @@ class Project {
             }
             modal[0].style.minHeight = `${newHeight}px`;
 
+
+            let currentScrollY = window.scrollY;
+            modal_container.classList.add('show');
+            modal_container.style.marginTop = `${currentScrollY}px`;
+            
+            projectsPage.style.zIndex = '5';
+            body.style.overflowY = 'hidden';
+            modal_container.style.overflowY = 'scroll';
+
+        
         });
 
 
