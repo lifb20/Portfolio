@@ -20,7 +20,7 @@ function switchToAbout(event){
         transitioning = true;
 
 
-        movingBorder.style.left = '3px';
+        movingBorder.style.left = '5px';
 
         aboutPage.style.transform = 'translateX(0%)'
 
@@ -68,7 +68,7 @@ function switchToProjects(event){
             setTimeout(() => {
                 projectsPage.style.transition = 'transform 1s ease';
                 projectsPage.style.transform = 'translateX(0%)'; // Move into view
-                movingBorder.style.left = '133px';
+                movingBorder.style.left = '135px';
                 aboutPage.style.transform = 'translateX(-100%)';
                 console.log('timeout 3');
 

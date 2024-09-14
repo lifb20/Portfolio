@@ -17,7 +17,7 @@ function switchToAbout(){
         toggle = 0;
         transitioning = true;
 
-        movingBorder.style.left = '3px';
+        movingBorder.style.left = '5px';
 
         aboutPage.style.transform = 'translateX(0%)'
 

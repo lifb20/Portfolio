@@ -152,6 +152,9 @@ a {
   width: 34px;
 }
 
+.cv-mobile {
+  display: none;
+}
 
 .title-text {
   display: flex;
@@ -316,6 +319,7 @@ a {
         
     }
 
+
     .link-cont {
         flex-direction: column;
         align-items: center;
@@ -362,6 +366,14 @@ a {
     flex-direction: row;
     margin-top: 10px;
     margin-bottom: 16px;
+  }
+
+  .cv-mobile {
+    display: flex;
+  }
+
+  .cv-desktop {
+    display: none;
   }
 
   .link {
