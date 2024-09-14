@@ -90,7 +90,7 @@ const project1 = {
 
     // Modal content
     "setting": "Setting: Imperial College London",
-    "date": "Date: 01/21–02/21",
+    "date": "Date: 01/21 – 02/21",
     "type": "Type: Individual",
 
     "gitHub": false,
@@ -104,7 +104,7 @@ const project1 = {
 
     "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
 
-    "info-list-one-toggle": false,
+    "info-list-one-toggle": true,
     "info-list-one-title": 'Info Title one',
     "info-list-one-items": ["item1", "item2", "item3"],
 
@@ -128,7 +128,7 @@ const project2 = {
 
     // Modal content
     "setting": "Setting: Imperial College London",
-    "date": "Date: 01/24–03/24",
+    "date": "Date: 01/24 – 03/24",
     "type": "Type: Individual",
 
     "gitHub": false,
@@ -146,11 +146,11 @@ const project2 = {
     "info-list-one-title": 'Info Title one',
     "info-list-one-items": ["item1", "item2", "item3"],
 
-    "info-list-two-toggle": false,
+    "info-list-two-toggle": true,
     "info-list-two-title": 'Info Title two',
     "info-list-two-items": ["item1", "item2", "item3"],
 
-    "info-list-three-toggle": false,
+    "info-list-three-toggle": true,
     "info-list-three-title": 'Info Title three',
     "info-list-three-items": ["item1", "item2", "item3"],
 }
@@ -180,15 +180,15 @@ const project3 = {
 
     "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
 
-    "info-list-one-toggle": false,
+    "info-list-one-toggle": true,
     "info-list-one-title": 'Info Title one',
     "info-list-one-items": ["item1", "item2", "item3"],
 
-    "info-list-two-toggle": false,
+    "info-list-two-toggle": true,
     "info-list-two-title": 'Info Title two',
     "info-list-two-items": ["item1", "item2", "item3"],
 
-    "info-list-three-toggle": false,
+    "info-list-three-toggle": true,
     "info-list-three-title": 'Info Title three',
     "info-list-three-items": ["item1", "item2", "item3"],
 }
