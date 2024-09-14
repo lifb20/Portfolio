@@ -4,11 +4,11 @@
  <g>
   <title>Layer 1</title>
   <g id="587f8b50-6a98-4354-bc3a-0839c5a125d9" transform="matrix(1, 0, 0, 1, 540, 540)">
-   <rect id="svg_1" fill-rule=" nonzero" fill=" rgb(255,255,255)" stroke-miterlimit="4" stroke-linejoin=" miter" stroke-dashoffset="0" stroke-linecap=" butt" stroke-dasharray=" none" stroke=" none" height="1080" width="1080" y="-540" x="-546.00006" vector-effect="non-scaling-stroke"/>
+   <rect id="svg_1" fill-rule=" nonzero" fill="none" stroke-miterlimit="4" stroke-linejoin=" miter" stroke-dashoffset="0" stroke-linecap=" butt" stroke-dasharray=" none" stroke=" none" height="1080" width="1080" y="-540" x="-546.00006" vector-effect="non-scaling-stroke"/>
   </g>
   <g id="24e8e059-2ddb-47b4-8a3e-ad5c9236a614" transform="matrix(1, 0, 0, 1, 540, 540)"/>
   <g id="svg_2" transform="matrix(1, 0, 0, 1, 540, 540)">
-   <rect id="svg_3" fill-rule=" nonzero" fill=" rgb(255,255,255)" stroke-miterlimit="4" stroke-linejoin=" miter" stroke-dashoffset="0" stroke-linecap=" butt" stroke-dasharray=" none" stroke=" none" height="1080" width="1080" y="-540" x="-542.00006" vector-effect="non-scaling-stroke"/>
+   <rect id="svg_3" fill-rule=" nonzero" fill="none" stroke-miterlimit="4" stroke-linejoin=" miter" stroke-dashoffset="0" stroke-linecap=" butt" stroke-dasharray=" none" stroke=" none" height="1080" width="1080" y="-540" x="-542.00006" vector-effect="non-scaling-stroke"/>
   </g>
   <g id="svg_4" transform="matrix(2.10628, 0, 0, 2.10628, 656.774, 680.318)">
    <path id="svg_5" fill-rule=" nonzero" fill=" rgb(0,0,0)" stroke-miterlimit="4" stroke-linejoin=" miter" stroke-dashoffset="0" stroke-dasharray=" none" stroke=" none" stroke-linecap=" butt" d="m161.10091,-196.44286l-123.804,-123.803c-1.961,-1.96 -4.618,-3.061 -7.389,-3.061l-237.077,0c-28.002,0 -50.782,22.782 -50.782,50.784l0,410.434c0,28.001 22.781,50.783 50.783,50.783l320.547,0c28.002,0 50.783,-22.781 50.783,-50.783l0,-326.965c-0.001,-2.771 -1.102,-5.429 -3.061,-7.389zm-120.741,-91.185l88.127,88.126l-58.242,0c-7.984,0 -15.49,-3.109 -21.134,-8.753c-5.643,-5.643 -8.752,-13.148 -8.751,-21.131l0,-58.242zm102.903,425.538c0,16.479 -13.406,29.885 -29.884,29.885l-320.548,0c-16.479,0 -29.885,-13.406 -29.885,-29.885l0,-410.433c0.001,-16.479 13.407,-29.886 29.885,-29.886l226.631,0l0,73.021c-0.002,13.565 5.28,26.318 14.871,35.909c9.592,9.592 22.345,14.874 35.911,14.874l73.018,0l0,316.515l0.001,0z" vector-effect="non-scaling-stroke"/>
@@ -29,3 +29,4 @@
   </g>
  </g>
 </svg>
+

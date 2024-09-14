@@ -56,7 +56,7 @@ class Project {
             if(window.innerWidth > "650"){
                 newHeight = Number(200) + Number(descriptionSize[0].clientHeight);
             } else {
-                newHeight = Number(490) + Number(descriptionSize[0].clientHeight) + Number(infoSize[0].clientHeight);
+                newHeight = Number(650) + Number(descriptionSize[0].clientHeight) + Number(infoSize[0].clientHeight);
             }
             modal[0].style.minHeight = `${newHeight}px`;
 
@@ -173,7 +173,7 @@ class Project {
 
                                     let reportImg = document.createElement('img');
                                     reportImg.classList.add('report-icon');
-                                    reportImg.src = "icon/CV-icon.svg";
+                                    reportImg.src = "icon/report-icon.svg";
                                     extraTextRightContainerTwo.appendChild(reportImg);
 
                                     let reportText = document.createElement('p');
