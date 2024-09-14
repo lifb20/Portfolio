@@ -111,7 +111,6 @@ a {
 .modal-image-title-extra-cont {
     min-height: 180px;
     margin: 20px;
-    margin-bottom: 0;
     display: flex;
 }
 
@@ -162,7 +161,7 @@ a {
     padding: 4px 0;
 
     font-size: 14px;
-    color: rgb(47, 114, 177);
+    color: rgb(34, 34, 34);
 }
 
 .extra-text-right-cont {
@@ -327,6 +326,10 @@ a {
     .image-container {
         max-width: 400px;
         order: 0;
+    }
+
+    .extra-text {
+        color: rgb(47, 114, 177);
     }
 
     .extra-left,
