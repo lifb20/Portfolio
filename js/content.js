@@ -29,11 +29,11 @@ for(var i=0; i < 9; i++){
     
         "description": ["Hello this is my first project", " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", "five"],
     
-        "info-list-one-toggle": true,
+        "info-list-one-toggle": false,
         "info-list-one-title": 'Info Title one',
         "info-list-one-items": ["item1", "item2", "item3"],
     
-        "info-list-two-toggle": true,
+        "info-list-two-toggle": false,
         "info-list-two-title": 'Info Title two',
         "info-list-two-items": ["item1", "item2", "item3"],
     

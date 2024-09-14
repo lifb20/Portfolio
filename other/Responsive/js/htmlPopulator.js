@@ -49,12 +49,14 @@ class Project {
             projectsPage.style.zIndex = '5';
             body.style.overflowY = 'hidden';
             modal_container.style.overflowY = 'scroll';
-            let descriptionResize = modal_container.getElementsByClassName('description');
+            let descriptionSize = modal_container.getElementsByClassName('description');
+            let infoSize = modal_container.getElementsByClassName('info');
+
             let newHeight;
-            if(window.innerWidth > "781"){
-                newHeight = Number(200) + Number(descriptionResize[0].clientHeight);
+            if(window.innerWidth > "650"){
+                newHeight = Number(200) + Number(descriptionSize[0].clientHeight);
             } else {
-                newHeight = Number(250) + Number(descriptionResize[0].clientHeight);
+                newHeight = Number(490) + Number(descriptionSize[0].clientHeight) + Number(infoSize[0].clientHeight);
             }
             modal[0].style.minHeight = `${newHeight}px`;
 
