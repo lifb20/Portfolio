@@ -32,6 +32,7 @@ a {
 .grid-box {
     /* min-width: 250px; */
     height: 260px;
+    min-width: 240px;
     border-style: solid;
     border-width: 3px;
     border-radius: 10px;
@@ -87,7 +88,7 @@ a {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    /* filter: blur(1px); */
+    filter: blur(0.5px);
 
     transition: transform 0.8s;
 }
@@ -122,6 +123,7 @@ a {
     /* margin-top: 100px;
     margin-bottom: 0; */
     font-size: 40px;
+    margin: 0 7px;
     text-align: center;
     color: #4D4D4D;
     font-weight: 300;
@@ -136,7 +138,7 @@ a {
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 670px){
     .grid {
         grid-template-columns: 1fr;
     }
