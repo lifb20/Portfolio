@@ -59,7 +59,7 @@ class Project {
             } else {
                 newHeight = Number(225) + Number(descriptionSize[0].clientHeight) + Number(infoSize[0].clientHeight) + Number(titleImageSize[0].clientHeight);
                 let newHeightTitleImageCont = Number(titleImageSize[0].clientHeight);
-                titleImageSize[0].style.minHeight = `${newHeightTitleImageCont}px`
+                titleImageSize[0].style.minHeight = `${newHeightTitleImageCont}px`;
             }
             modal[0].style.minHeight = `${newHeight}px`;
 
