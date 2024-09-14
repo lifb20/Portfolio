@@ -49,6 +49,7 @@ class Project {
             projectsPage.style.zIndex = '5';
             body.style.overflowY = 'hidden';
             modal_container.style.overflowY = 'scroll';
+            let titleImageSize = modal_container.getElementsByClassName('modal-image-title-extra-cont');
             let descriptionSize = modal_container.getElementsByClassName('description');
             let infoSize = modal_container.getElementsByClassName('info');
 
@@ -56,7 +57,7 @@ class Project {
             if(window.innerWidth > "650"){
                 newHeight = Number(200) + Number(descriptionSize[0].clientHeight);
             } else {
-                newHeight = Number(650) + Number(descriptionSize[0].clientHeight) + Number(infoSize[0].clientHeight);
+                newHeight = Number(225) + Number(descriptionSize[0].clientHeight) + Number(infoSize[0].clientHeight) + Number(titleImageSize[0].clientHeight);
             }
             modal[0].style.minHeight = `${newHeight}px`;
 
