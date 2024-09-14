@@ -318,6 +318,7 @@ a {
     .modal {
         min-width: 90vw;
     }
+
     .modal-image-title-extra-cont {
         flex-direction: column;
         align-items: center;
