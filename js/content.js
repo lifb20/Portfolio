@@ -193,9 +193,47 @@ const project3 = {
     "info-list-three-items": ["item1", "item2", "item3"],
 }
 
+const project4 = {
+    // Unique project ID
+    "id": "4",
+
+    // Box content
+    "title": "Machine Learning",
+    "tags": ["ALL", "FEATURED", "INDIV", "ML"],
+    "img-source": 'img/id_4.png',
+
+    // Modal content
+    "setting": "Setting: Imperial College London",
+    "date": "Date: 10/23 – 11/23",
+    "type": "Type: Individual",
+
+    "gitHub": true,
+    "gitHub-link": "https://github.com/lifb20/Machine-Learning-Coursework",
+    "report": true,
+    "report-link": "documents/id_4.pdf",
+    "website": false,
+    "website-link": "https://lifb20.github.io/Portfolio/",
+
+    "img-src": "img/id_4.png",
+
+    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+
+    "info-list-one-toggle": true,
+    "info-list-one-title": 'Info Title one',
+    "info-list-one-items": ["item1", "item2", "item3"],
+
+    "info-list-two-toggle": true,
+    "info-list-two-title": 'Info Title two',
+    "info-list-two-items": ["item1", "item2", "item3"],
+
+    "info-list-three-toggle": true,
+    "info-list-three-title": 'Info Title three',
+    "info-list-three-items": ["item1", "item2", "item3"],
+}
 
 
-const content = [project1, project2, project3];
+
+const content = [project1, project2, project3, project4];
 
 const contentObjects = content.map( contentItem => 
     new Project(contentItem)
