@@ -102,14 +102,16 @@ const project1 = {
 
     "img-src": "img/id_1.png",
 
-    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+    "description": ["The objective of this project was to design a CPU from scratch on a Register-Transfer Level. The processor can run 11 unique instructions, including basic arithmetic, jump instructions, as well as load and store instructions. Although the CPU was design on in-house Imperial College software, namely ISSIE, the skills learned and techniques applied are transferable to any RTL design environment.",
+         "The design involved 3 states, controlled by the finite-state machine. However, not all instructions required that many states. Hence, the design was optimised by reducing the number of states used by certain instructions, resulting in these instructions running 33% faster.",
+          "One of the challenges faced included figuring out how to convert top-level design specifications into functional RTL logic. This was overcome by breaking down the top-level design into components with distinct functionality, determining how these components would communicate each other and then using reasoning to design its internal logic."],
 
-    "info-list-one-toggle": true,
-    "info-list-one-title": 'Info Title one',
+    "info-list-one-toggle": false,
+    "info-list-one-title": 'Achievements:',
     "info-list-one-items": ["item1", "item2", "item3"],
 
     "info-list-two-toggle": false,
-    "info-list-two-title": 'Info Title two',
+    "info-list-two-title": 'Challenges:',
     "info-list-two-items": ["item1", "item2", "item3"],
 
     "info-list-three-toggle": false,
@@ -131,8 +133,8 @@ const project2 = {
     "date": "Date: 01/24 – 03/24",
     "type": "Type: Individual",
 
-    "gitHub": false,
-    "gitHub-link": "Report-Link",
+    "gitHub": true,
+    "gitHub-link": "https://github.com/lifb20/CORDIC-Hardware-Accelerator/tree/master",
     "report": true,
     "report-link": "documents/id_2.pdf",
     "website": false,
@@ -142,15 +144,15 @@ const project2 = {
 
     "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
 
-    "info-list-one-toggle": false,
-    "info-list-one-title": 'Info Title one',
-    "info-list-one-items": ["item1", "item2", "item3"],
+    "info-list-one-toggle": true,
+    "info-list-one-title": 'Languages used:',
+    "info-list-one-items": ["Verilog", "MATLAB", "C"],
 
-    "info-list-two-toggle": true,
+    "info-list-two-toggle": false,
     "info-list-two-title": 'Info Title two',
     "info-list-two-items": ["item1", "item2", "item3"],
 
-    "info-list-three-toggle": true,
+    "info-list-three-toggle": false,
     "info-list-three-title": 'Info Title three',
     "info-list-three-items": ["item1", "item2", "item3"],
 }
@@ -199,7 +201,7 @@ const project4 = {
 
     // Box content
     "title": "Machine Learning",
-    "tags": ["ALL", "FEATURED", "INDIV", "ML"],
+    "tags": ["ALL", "FEATURED", "INDIV", "ML", "PYTHON"],
     "img-source": 'img/id_4.png',
 
     // Modal content

@@ -264,6 +264,7 @@ class Project {
                             jsonObject['info-list-one-items'].forEach( (item) =>{
                                 let listItem = document.createElement('li');
                                 listItem.classList.add('list-item');
+                                listItem.innerHTML = item;
                                 infoListOne.appendChild(listItem);
                             });
                         }
@@ -281,6 +282,7 @@ class Project {
                             jsonObject['info-list-two-items'].forEach( (item) =>{
                                 let listItem = document.createElement('li');
                                 listItem.classList.add('list-item');
+                                listItem.innerHTML = item;
                                 infoListTwo.appendChild(listItem);
                             });
                         }
@@ -298,6 +300,7 @@ class Project {
                             jsonObject['info-list-three-items'].forEach( (item) =>{
                                 let listItem = document.createElement('li');
                                 listItem.classList.add('list-item');
+                                listItem.innerHTML = item;
                                 infoListThree.appendChild(listItem);
                             });
                         }
