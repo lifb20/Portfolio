@@ -409,8 +409,9 @@ a {
     }
 
     .list-item {
-        margin-left: 20%;
+        margin-left: 38%;
         margin-bottom: 15px;
+        text-align: left;
     }
 
     .info-list {

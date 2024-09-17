@@ -148,8 +148,8 @@ const project2 = {
     "info-list-one-title": 'Languages used:',
     "info-list-one-items": ["Verilog", "MATLAB", "C"],
 
-    "info-list-two-toggle": false,
-    "info-list-two-title": 'Info Title two',
+    "info-list-two-toggle": true,
+    "info-list-two-title": 'Achievements:',
     "info-list-two-items": ["item1", "item2", "item3"],
 
     "info-list-three-toggle": false,
