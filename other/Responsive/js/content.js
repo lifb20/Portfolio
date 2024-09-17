@@ -107,8 +107,8 @@ const project1 = {
           "One of the challenges faced included figuring out how to convert top-level design specifications into functional RTL logic. This was overcome by breaking down the top-level design into components with distinct functionality, determining how these components would communicate each other and then using reasoning to design its internal logic."],
 
     "info-list-one-toggle": false,
-    "info-list-one-title": 'Achievements:',
-    "info-list-one-items": ["item1", "item2", "item3"],
+    "info-list-one-title": 'Features:',
+    "info-list-one-items": ["Optimised instructions", "item2", "item3"],
 
     "info-list-two-toggle": false,
     "info-list-two-title": 'Challenges:',
@@ -124,7 +124,7 @@ const project2 = {
     "id": "2",
 
     // Box content
-    "title": "Hardware Acceleration on FPGA for NIOS II Processor",
+    "title": "FPGA Accelerator Hardware",
     "tags": ["ALL", "FEATURED", "FPGA", "VERILOG", "MATLAB", "C"],
     "img-source": 'img/id_2.png',
 
@@ -145,12 +145,12 @@ const project2 = {
     "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
 
     "info-list-one-toggle": true,
-    "info-list-one-title": 'Languages used:',
-    "info-list-one-items": ["Verilog", "MATLAB", "C"],
+    "info-list-one-title": 'Features:',
+    "info-list-one-items": ["Floating point converter 85% faster than Intel IP", ""],
 
     "info-list-two-toggle": true,
-    "info-list-two-title": 'Achievements:',
-    "info-list-two-items": ["item1", "item2", "item3"],
+    "info-list-two-title": 'Languages used:',
+    "info-list-two-items": ["Verilog", "MATLAB", "C"],
 
     "info-list-three-toggle": false,
     "info-list-three-title": 'Info Title three',
@@ -183,14 +183,14 @@ const project3 = {
     "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
 
     "info-list-one-toggle": true,
-    "info-list-one-title": 'Info Title one',
-    "info-list-one-items": ["item1", "item2", "item3"],
+    "info-list-one-title": 'Features:',
+    "info-list-one-items": ["Effortless responsive design", "OOP-design techniques to ensure scalability", "Single-page application"],
 
     "info-list-two-toggle": true,
-    "info-list-two-title": 'Info Title two',
-    "info-list-two-items": ["item1", "item2", "item3"],
+    "info-list-two-title": 'Languages used:',
+    "info-list-two-items": ["JavaScript", "HTML/CSS"],
 
-    "info-list-three-toggle": true,
+    "info-list-three-toggle": false,
     "info-list-three-title": 'Info Title three',
     "info-list-three-items": ["item1", "item2", "item3"],
 }
@@ -233,9 +233,85 @@ const project4 = {
     "info-list-three-items": ["item1", "item2", "item3"],
 }
 
+const project5 = {
+    // Unique project ID
+    "id": "5",
+
+    // Box content
+    "title": "Analogue Music Synthesiser",
+    "tags": ["ALL", "FEATURED", "GROUP", "ANAL", "PYTHON"],
+    "img-source": 'img/id_5.png',
+
+    // Modal content
+    "setting": "Setting: Imperial College London",
+    "date": "Date: 05/21 – 06/21",
+    "type": "Type: Group",
+
+    "gitHub": false,
+    "gitHub-link": "https://github.com/lifb20/Machine-Learning-Coursework",
+    "report": true,
+    "report-link": "documents/id_5.pdf",
+    "website": true,
+    "website-link": "documents/demo_5.mp4",
+
+    "img-src": "img/id_5.png",
+
+    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+
+    "info-list-one-toggle": true,
+    "info-list-one-title": 'Language used:',
+    "info-list-one-items": ["LTspice"],
+
+    "info-list-two-toggle": false,
+    "info-list-two-title": 'Info Title two',
+    "info-list-two-items": ["item1", "item2", "item3"],
+
+    "info-list-three-toggle": false,
+    "info-list-three-title": 'Info Title three',
+    "info-list-three-items": ["item1", "item2", "item3"],
+}
+
+const project6 = {
+    // Unique project ID
+    "id": "6",
+
+    // Box content
+    "title": "Mars Rover Project",
+    "tags": ["ALL", "FEATURED", "GROUP", "ANAL", "CPP"],
+    "img-source": 'img/id_6.jpg',
+
+    // Modal content
+    "setting": "Setting: Imperial College London",
+    "date": "Date: 05/22 – 06/22",
+    "type": "Type: Group",
+
+    "gitHub": true,
+    "gitHub-link": "https://github.com/samin50/Wall-EE",
+    "report": true,
+    "report-link": "documents/id_6.jpg",
+    "website": false,
+    "website-link": "documents/demo_5.mp4",
+
+    "img-src": "img/id_6.jpg",
+
+    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+
+    "info-list-one-toggle": false,
+    "info-list-one-title": 'Language used:',
+    "info-list-one-items": ["LTspice"],
+
+    "info-list-two-toggle": true,
+    "info-list-two-title": 'Language used:',
+    "info-list-two-items": ["C++"],
+
+    "info-list-three-toggle": false,
+    "info-list-three-title": 'Info Title three',
+    "info-list-three-items": ["item1", "item2", "item3"],
+}
 
 
-const content = [project1, project2, project3, project4];
+
+const content = [project1, project2, project3, project4, project5, project6];
 
 const contentObjects = content.map( contentItem => 
     new Project(contentItem)
