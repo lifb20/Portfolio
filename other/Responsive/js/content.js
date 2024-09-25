@@ -182,11 +182,13 @@ const project3 = {
 
     "img-src": "img/id_3.png",
 
-    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+    "description": ["This Portfolio Website was created to display projects and work I have undertaken using the programming, electronic and maths skills I have been developing over the past decade. As a challenge, as well as to ensure I understand fundamental JavaScript, this website was designed completely from scratch without the use of libraries nor frameworks. Since this website will progressively grow, it was designed to be scalable by using classes, allowing for new projects to be added easily and swiftly.",
+        "Some of the challenges faced during development included making the website a single-page application, creating a custom filter from scratch and ensuring the website remained responsive. The key to overcoming these issues was utilising various JavaScript event listeners to dynamically amend certain CSS styles. Furthermore, JavaScript’s lack of static typing resulted in easily losing track of the data types while coding. Hence, a suggested future improvement would be transferring the code to TypeScript, where data types are more explicit."
+         ],
 
     "info-list-one-toggle": true,
     "info-list-one-title": 'Features:',
-    "info-list-one-items": ["Effortless responsive design", "OOP-design techniques to ensure scalability", "Single-page application"],
+    "info-list-one-items": ["Seamless responsive design", "OOP-design techniques to ensure scalability", "Single-page application"],
 
     "info-list-two-toggle": true,
     "info-list-two-title": 'Languages used:',
@@ -297,7 +299,8 @@ const project6 = {
     "img-src": "img/id_6.jpg",
 
     "description": ["The Mars Rover Group Project consisted of a group of 7 engineers tasked with creating a multi-functional rover. For instance, being able to detect certain objects, stream its live location to a web-app and automatically return to its solar-panel charging station. My responsibilities involved writing C++ code to ensure the Rover always has enough charge to return to its charging station and maximise the power output of the solar panels by implementing a maximum-power tracking algorithm. Furthermore, I was responsible for implementing a control system on an Switch-Mode Power Supply that ensured the battery received a constant 5V when charging."
-        ],
+        , "Throughout the project, we had to overcome significant obstacles. One of the main obstacles was that the testing of the solar panel algorithm only worked in sunny weather. This issue was circumvented by testing the algorithm indoors by shining a strong light onto the panels."
+    ],
 
     "info-list-one-toggle": false,
     "info-list-one-title": 'Language used:',
@@ -317,7 +320,7 @@ const project7 = {
     "id": "7",
 
     // Box content
-    "title": "Agile/Scrum Case Study",
+    "title": "Agile/Scrum Essay",
     "tags": ["ALL", "FEATURED", "INDIV"],
     "img-source": 'img/id_7.png',
 
@@ -335,7 +338,10 @@ const project7 = {
 
     "img-src": "img/id_7.png",
 
-    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+    "description": ["This essay is an investigation into the history, development, implementation and pitfalls of the Agile/Scrum project management methodologies. The essay has helped me understand that Scrum is a framework based on Agile principals. Furthermore, despite Scrum’s variability, it was mainly developed for a software development environment."
+        , "The essay also discusses the various Scrum roles, responsibilities and implementation. To understand why Scrum was developed, there is also significant comparison to more traditional project management methodologies, such as Waterfall.",
+         "Finally, an analysis of various case studies provide an insight into how Scrum can be implemented most effectively in practise, as well as how potential pitfalls can be avoided."
+        ],
 
     "info-list-one-toggle": false,
     "info-list-one-title": 'Language used:',
@@ -373,7 +379,9 @@ const project8 = {
 
     "img-src": "img/id_8.png",
 
-    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+    "description": ["LingoPal was a collaborative project management undertaking, detailing the process of taking a product from conception to deployment. The product itself was a language-learning robot, functioning as a buddy that could help children develop their language skills. The project consisted of a report and pitch-style presentation."
+        , "My responsibilities involved Change Management, Team/Stakeholder Communication and Progress Documentation. In addition to this, I was in charge of proof-reading and collating the report. One of the key lessons learned was that a single project management technique is not always the most effective. Instead, a combination of techniques, such as Agile and Waterfall methods, could be more effective depending on the project’s nature. Furthermore, when it comes to communication, one should ensure everyone involved in the project feels heard and has a sense of ownership. Also, when considering Change Management, one should have contingency plans to ensure project overshoots, e.g. overspends, delays or unrealistic project scopes, do not jeopardise the entire project."
+        ],
 
     "info-list-one-toggle": false,
     "info-list-one-title": 'Language used:',

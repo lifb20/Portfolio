@@ -67,7 +67,7 @@ a {
     min-width: 52vw;
     max-width: 750px;
 
-    min-height: 100%;
+    min-height: 100vh;
     height: min-content;
     border-radius: 20px;
 
