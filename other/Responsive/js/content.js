@@ -296,7 +296,8 @@ const project6 = {
 
     "img-src": "img/id_6.jpg",
 
-    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+    "description": ["The Mars Rover Group Project consisted of a group of 7 engineers tasked with creating a multi-functional rover. For instance, being able to detect certain objects, stream its live location to a web-app and automatically return to its solar-panel charging station. My responsibilities involved writing C++ code to ensure the Rover always has enough charge to return to its charging station and maximise the power output of the solar panels by implementing a maximum-power tracking algorithm. Furthermore, I was responsible for implementing a control system on an Switch-Mode Power Supply that ensured the battery received a constant 5V when charging."
+        ],
 
     "info-list-one-toggle": false,
     "info-list-one-title": 'Language used:',

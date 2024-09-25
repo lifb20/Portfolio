@@ -49,12 +49,12 @@ class Project {
             let infoSize = modal_container.getElementsByClassName('info');
             let newHeight;
 
-            if(window.innerWidth > "650"){
-                newHeight = Number(200) + Number(descriptionSize[0].clientHeight);
-            } else {
-                newHeight = Number(225) + Number(descriptionSize[0].clientHeight) + Number(infoSize[0].clientHeight) + Number(titleImageSize[0].clientHeight);
-            }
-            modal[0].style.minHeight = `${newHeight}px`;
+            // if(window.innerWidth > "650"){
+            //     newHeight = Number(200) + Number(descriptionSize[0].clientHeight);
+            // } else {
+            //     newHeight = Number(225) + Number(descriptionSize[0].clientHeight) + Number(infoSize[0].clientHeight) + Number(titleImageSize[0].clientHeight);
+            // }
+            // modal[0].style.minHeight = `${newHeight}px`;
 
 
             let currentScrollY = window.scrollY;

@@ -65,9 +65,10 @@ a {
     margin-top: 20px;
     margin-bottom: 20px;
     min-width: 52vw;
-    max-width: 700px;
+    max-width: 750px;
 
-    min-height: 80%;
+    min-height: 100%;
+    height: min-content;
     border-radius: 20px;
 
     display: flex;
