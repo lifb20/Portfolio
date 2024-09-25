@@ -222,7 +222,7 @@ a {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    transform: scale(1.5);
+    transform: scale(1);
 }
 
 .modal-description-and-info-cont {

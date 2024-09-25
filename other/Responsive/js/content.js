@@ -85,7 +85,7 @@ const project1 = {
 
     // Box content
     "title": "CPU Design Project",
-    "tags": ["ALL", "FEATURED", "DD"],
+    "tags": ["ALL", "FEATURED", "INDIV", "DD"],
     "img-source": 'img/id_1.png',
 
     // Modal content
@@ -124,8 +124,8 @@ const project2 = {
     "id": "2",
 
     // Box content
-    "title": "FPGA Accelerator Hardware",
-    "tags": ["ALL", "FEATURED", "FPGA", "VERILOG", "MATLAB", "C"],
+    "title": "FPGA Hardware Accelerator",
+    "tags": ["ALL", "FEATURED", "INDIV", "FPGA", "VERILOG", "MATLAB", "C"],
     "img-source": 'img/id_2.png',
 
     // Modal content
@@ -142,9 +142,11 @@ const project2 = {
 
     "img-src": "img/id_2.png",
 
-    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+    "description": ["This project’s objective was to implement custom accelerator hardware on an FPGA to maximise the throughput for the calculation of the Cosine function. To achieve this, there task was broken down into 3 main parts across 3 different programming languages, namely Verilog, C and MATLAB. The first part involved instantiating a NIOS II processor on an Intel DE10-MAX FPGA from Quartus Prime, followed by executing test cases, written in C, on the processor. Furthermore, running these tests provided insights into the differences of the data cache and instruction cache, as well as how to determine the optimal size of said caches with respect to the task at hand.",
+         "The calculation of Cosine was to be achieved without the use of a LUT. Instead, we used the CORDIC algorithm, which uses a fixed number of iterations to converge to a Cosine value within a given error range. MATLAB was used to simulate the CORDIC design before it was implemented in Verilog. This allowed one to determine the optimal word length and number of iterations to achieve a precision of 10-6 with a 95% confidence. To ascertain these, Monte Carlo simulations were run several 100 thousands of times.", 
+         "Once testing was completed on the MATLAB design of CORDIC, the design was implemented in Verilog. Modular design techniques were utilised to allow for reusable code. Furthermore, throughput was maximised by having the same number of CORDIC blocks as iterations required to complete a Cosine calculation. A challenge was faced was using Intel’s IP for floating point to fixed-point conversions. Thus, I implemented my own converter, which could convert floating point values to fixed-point ones in 1iteration, compared to Intel’s IP’s 7 iterations. This was accomplished due to the tighter constraints on floating point input values. "],
 
-    "info-list-one-toggle": true,
+    "info-list-one-toggle": false,
     "info-list-one-title": 'Features:',
     "info-list-one-items": ["Floating point converter 85% faster than Intel IP", ""],
 
@@ -163,7 +165,7 @@ const project3 = {
 
     // Box content
     "title": "Portfolio Website",
-    "tags": ["ALL", "FEATURED", "JS", "FULLS", "FRONTEND"],
+    "tags": ["ALL", "FEATURED", "INDIV", "JS", "FULLS", "FRONTEND"],
     "img-source": 'img/id_3.png',
 
     // Modal content
@@ -239,7 +241,7 @@ const project5 = {
 
     // Box content
     "title": "Analogue Music Synthesiser",
-    "tags": ["ALL", "FEATURED", "GROUP", "ANAL", "PYTHON"],
+    "tags": ["ALL", "FEATURED", "GROUP", "ANAL"],
     "img-source": 'img/id_5.png',
 
     // Modal content
@@ -285,12 +287,12 @@ const project6 = {
     "date": "Date: 05/22 – 06/22",
     "type": "Type: Group",
 
-    "gitHub": true,
+    "gitHub": false,
     "gitHub-link": "https://github.com/samin50/Wall-EE",
     "report": true,
     "report-link": "documents/id_6.jpg",
     "website": false,
-    "website-link": "documents/demo_5.mp4",
+    "website-link": "",
 
     "img-src": "img/id_6.jpg",
 
@@ -309,9 +311,84 @@ const project6 = {
     "info-list-three-items": ["item1", "item2", "item3"],
 }
 
+const project7 = {
+    // Unique project ID
+    "id": "7",
+
+    // Box content
+    "title": "Agile/Scrum Case Study",
+    "tags": ["ALL", "FEATURED", "INDIV"],
+    "img-source": 'img/id_7.png',
+
+    // Modal content
+    "setting": "Setting: Imperial College London",
+    "date": "Date: 01/24 – 02/24",
+    "type": "Type: Individual",
+
+    "gitHub": false,
+    "gitHub-link": "https://github.com/samin50/Wall-EE",
+    "report": true,
+    "report-link": "documents/id_7.pdf",
+    "website": false,
+    "website-link": "",
+
+    "img-src": "img/id_7.png",
+
+    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+
+    "info-list-one-toggle": false,
+    "info-list-one-title": 'Language used:',
+    "info-list-one-items": ["LTspice"],
+
+    "info-list-two-toggle": false,
+    "info-list-two-title": 'Language used:',
+    "info-list-two-items": ["C++"],
+
+    "info-list-three-toggle": false,
+    "info-list-three-title": 'Info Title three',
+    "info-list-three-items": ["item1", "item2", "item3"],
+}
+
+const project8 = {
+    // Unique project ID
+    "id": "8",
+
+    // Box content
+    "title": "LingoPal Project",
+    "tags": ["ALL", "FEATURED", "GROUP"],
+    "img-source": 'img/id_8.png',
+
+    // Modal content
+    "setting": "Setting: Imperial College London",
+    "date": "Date: 02/24 – 03/24",
+    "type": "Type: Group",
+
+    "gitHub": false,
+    "gitHub-link": "https://github.com/samin50/Wall-EE",
+    "report": true,
+    "report-link": "documents/id_8.pdf",
+    "website": false,
+    "website-link": "",
+
+    "img-src": "img/id_8.png",
+
+    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+
+    "info-list-one-toggle": false,
+    "info-list-one-title": 'Language used:',
+    "info-list-one-items": ["LTspice"],
+
+    "info-list-two-toggle": false,
+    "info-list-two-title": 'Language used:',
+    "info-list-two-items": ["C++"],
+
+    "info-list-three-toggle": false,
+    "info-list-three-title": 'Info Title three',
+    "info-list-three-items": ["item1", "item2", "item3"],
+}
 
 
-const content = [project1, project2, project3, project4, project5, project6];
+const content = [project1, project2, project3, project4, project5, project6, project7, project8];
 
 const contentObjects = content.map( contentItem => 
     new Project(contentItem)
