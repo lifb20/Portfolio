@@ -222,17 +222,19 @@ const project4 = {
 
     "img-src": "img/id_4.png",
 
-    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+    "description": ["The following coursework aimed to teach the practical application of, as well as the theory behind, various Machine Learning algorithms. This included both supervised and unsupervised learning techniques, such as PLA, Linear Regression, Non-Linear Feature Transforms, Logistic Regression, Multi-Layer Perceptrons, SVMs, kNNs and K-Means Clustering."
+        , "Although focusing on providing one with tools to tackle various ML problems, this coursework also taught invaluable data science skills in Python."
+        ],
 
     "info-list-one-toggle": true,
-    "info-list-one-title": 'Info Title one',
-    "info-list-one-items": ["item1", "item2", "item3"],
+    "info-list-one-title": 'Language used:',
+    "info-list-one-items": ["Python", "LaTeX"],
 
     "info-list-two-toggle": true,
-    "info-list-two-title": 'Info Title two',
-    "info-list-two-items": ["item1", "item2", "item3"],
+    "info-list-two-title": 'Python Libraries used:',
+    "info-list-two-items": ["Tensorflow/Keras", "Numpy", "Pandas", "Scikit-Learn", "Matplotlib"],
 
-    "info-list-three-toggle": true,
+    "info-list-three-toggle": false,
     "info-list-three-title": 'Info Title three',
     "info-list-three-items": ["item1", "item2", "item3"],
 }
@@ -260,7 +262,9 @@ const project5 = {
 
     "img-src": "img/id_5.png",
 
-    "description": ["Hello this is my first project", " lorem ipsum two", "lorem ipsum three", "five"],
+    "description": ["Within this project, we utilised fundamental electronic components to design an analogue music synthesiser. Once completed, it outputted a basic “Happy Birthday” theme song. In addition to designing the synthesiser, we were also tasked with creating various filters that would change how various tones sounds. For instance, changing a square wave into a triangle wave. The reasoning behind this was that such filters are common features among analogue music synthesisers."
+        , "Having conducted the project as a group of 3, the project was broken into 3 components. My responsibilities were to design the filter, which was essentially an analogue integrator. One of the main challenges faced was the inconsistent behaviour for different frequencies – a direct result of the high-pass behaviour of capacitors. Another challenge was integration, which necessitated strict input-output design requirements between the main components. This enabled each group member to work on their part, knowing what to expect as an input.",
+        ],
 
     "info-list-one-toggle": true,
     "info-list-one-title": 'Language used:',
@@ -303,8 +307,8 @@ const project6 = {
     ],
 
     "info-list-one-toggle": false,
-    "info-list-one-title": 'Language used:',
-    "info-list-one-items": ["LTspice"],
+    "info-list-one-title": 'Features:',
+    "info-list-one-items": ["d"],
 
     "info-list-two-toggle": true,
     "info-list-two-title": 'Language used:',
@@ -396,8 +400,51 @@ const project8 = {
     "info-list-three-items": ["item1", "item2", "item3"],
 }
 
+const project9 = {
+    // Unique project ID
+    "id": "9",
 
-const content = [project1, project2, project3, project4, project5, project6, project7, project8];
+    // Box content
+    "title": "Patient Voice AI Flask App",
+    "tags": ["ALL", "FEATURED", "GROUP", "DL", "FRONTEND", "BACKEND", "DL", "PYTHON", "JS"],
+    "img-source": 'img/id_8.png',
+
+    // Modal content
+    "setting": "Setting: Consultancy Project",
+    "date": "Date: 04/24 – 06/24",
+    "type": "Type: Group",
+
+    "gitHub": false,
+    "gitHub-link": "https://github.com/samin50/Wall-EE",
+    "report": true,
+    "report-link": "documents/id_8.pdf",
+    "website": false,
+    "website-link": "",
+
+    "img-src": "img/id_8.png",
+
+    "description": ["Patient Voice AI was a consultancy project for the med-tech company MF-Tech. The aim was to develop an automatic pre-screening process for NHS patients with throat-related complaints. This would be achieved by using Machine Learning techniques to extract crucial information from an audio clip, in which the patient describes their symptoms. The final result consisted of 3 different ML models, each with the task of: sentiment analysis, preliminary disease classification and cough-to-speech analysis. Using the results of these 3 models, the doctor would have information to aid their diagnosis of the patient."
+        , "A website interface was created such that the patient would only have to upload a voice recording – everything else would be taken care of on the website’s Back-End, which was my responsibility. The Back-End was built using Python’s Flask framework. Furthermore, I led the integration of the various ML models, such that an audio sample would be sent from the Front-End to the Back-End, transcribed, processed individually by each model and then output the results in the form of a PDF that could be sent to the patient’s and doctor’s email."
+        , "Initially, I had trained a CNN model that could classify whether a patient was suffering to a throat infection with 75% accuracy. However, due to project requirement changes surrounding the patient’s voice recording, this model had to be dismissed."
+        ],
+
+    "info-list-one-toggle": true,
+    "info-list-one-title": 'Features: ',
+    "info-list-one-items": ["Semantic Analysis", "Disease Classification", "Cough-sneeze Identification", "Complete Front- and Back-End for seemless user-experience"],
+
+    "info-list-two-toggle": true,
+    "info-list-two-title": 'Languages used:',
+    "info-list-two-items": ["Python", "JavaScript", "HTML/CSS"],
+
+    "info-list-three-toggle": true,
+    "info-list-three-title": 'Libraries/Frameworks used:',
+    "info-list-three-items": ["Flask", "Tensorflow/Keras"],
+}
+
+
+const content = [project1, project2, project3,
+                 project4, project5, project6,
+                 project7, project8, project9];
 
 const contentObjects = content.map( contentItem => 
     new Project(contentItem)
