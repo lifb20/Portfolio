@@ -245,7 +245,7 @@ const project5 = {
 
     // Box content
     "title": "Analogue Music Synthesiser",
-    "tags": ["ALL", "FEATURED", "GROUP", "ANAL"],
+    "tags": ["ALL", "GROUP", "ANAL"],
     "img-source": 'img/id_5.png',
 
     // Modal content
@@ -285,7 +285,7 @@ const project6 = {
 
     // Box content
     "title": "Mars Rover Project",
-    "tags": ["ALL", "FEATURED", "GROUP", "ANAL", "CPP"],
+    "tags": ["ALL", "GROUP", "ANAL", "CPP"],
     "img-source": 'img/id_6.jpg',
 
     // Modal content
@@ -325,7 +325,7 @@ const project7 = {
 
     // Box content
     "title": "Agile/Scrum Essay",
-    "tags": ["ALL", "FEATURED", "INDIV"],
+    "tags": ["ALL", "INDIV"],
     "img-source": 'img/id_7.png',
 
     // Modal content
@@ -366,7 +366,7 @@ const project8 = {
 
     // Box content
     "title": "LingoPal Project",
-    "tags": ["ALL", "FEATURED", "GROUP"],
+    "tags": ["ALL", "GROUP"],
     "img-source": 'img/id_8.png',
 
     // Modal content
@@ -405,23 +405,23 @@ const project9 = {
     "id": "9",
 
     // Box content
-    "title": "Patient Voice AI Flask App",
+    "title": "Patient Voice AI – Flask App",
     "tags": ["ALL", "FEATURED", "GROUP", "DL", "FRONTEND", "BACKEND", "DL", "PYTHON", "JS"],
-    "img-source": 'img/id_8.png',
+    "img-source": 'img/id_9.png',
 
     // Modal content
-    "setting": "Setting: Consultancy Project",
+    "setting": "Setting: Consultancy Project/ Imperial College",
     "date": "Date: 04/24 – 06/24",
     "type": "Type: Group",
 
-    "gitHub": false,
-    "gitHub-link": "https://github.com/samin50/Wall-EE",
+    "gitHub": true,
+    "gitHub-link": "https://github.com/torpeyl/Group-16-Project-MFTECH-Patient-Voice-AI",
     "report": true,
-    "report-link": "documents/id_8.pdf",
+    "report-link": "documents/id_9.pdf",
     "website": false,
     "website-link": "",
 
-    "img-src": "img/id_8.png",
+    "img-src": "img/id_9.png",
 
     "description": ["Patient Voice AI was a consultancy project for the med-tech company MF-Tech. The aim was to develop an automatic pre-screening process for NHS patients with throat-related complaints. This would be achieved by using Machine Learning techniques to extract crucial information from an audio clip, in which the patient describes their symptoms. The final result consisted of 3 different ML models, each with the task of: sentiment analysis, preliminary disease classification and cough-to-speech analysis. Using the results of these 3 models, the doctor would have information to aid their diagnosis of the patient."
         , "A website interface was created such that the patient would only have to upload a voice recording – everything else would be taken care of on the website’s Back-End, which was my responsibility. The Back-End was built using Python’s Flask framework. Furthermore, I led the integration of the various ML models, such that an audio sample would be sent from the Front-End to the Back-End, transcribed, processed individually by each model and then output the results in the form of a PDF that could be sent to the patient’s and doctor’s email."
