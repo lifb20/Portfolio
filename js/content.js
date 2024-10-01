@@ -439,7 +439,7 @@ const project9 = {
     "website": false,
     "website-link": "",
     "demo": true,
-    "demo-link": "documents/demo_9.mov",
+    "demo-link": "documents/demo_9.mp4",
 
     "img-src": "img/id_9.png",
 
