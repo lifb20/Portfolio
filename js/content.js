@@ -61,6 +61,8 @@ const project0 = {
     "report-link": "Report-Link",
     "website": true,
     "website-link": "Website-Link",
+    "demo": false,
+    "demo-link": "demo-link",
 
     "img-src": "Img-src",
 
@@ -99,6 +101,8 @@ const project1 = {
     "report-link": "documents/id_1.pdf",
     "website": false,
     "website-link": "Website-Link",
+    "demo": false,
+    "demo-link": "demo-link",
 
     "img-src": "img/id_1.png",
 
@@ -125,7 +129,7 @@ const project2 = {
 
     // Box content
     "title": "FPGA Hardware Accelerator",
-    "tags": ["ALL", "FEATURED", "INDIV", "FPGA", "VERILOG", "MATLAB", "C"],
+    "tags": ["ALL", "FEATURED", "INDIV", "FPGA", "VERILOG", "MATLAB", "CPP"],
     "img-source": 'img/id_2.png',
 
     // Modal content
@@ -139,6 +143,8 @@ const project2 = {
     "report-link": "documents/id_2.pdf",
     "website": false,
     "website-link": "Website-Link",
+    "demo": false,
+    "demo-link": "demo-link",
 
     "img-src": "img/id_2.png",
 
@@ -179,6 +185,8 @@ const project3 = {
     "report-link": "documents/id_2.pdf",
     "website": true,
     "website-link": "https://lifb20.github.io/Portfolio/",
+    "demo": false,
+    "demo-link": "demo-link",
 
     "img-src": "img/id_3.png",
 
@@ -219,6 +227,8 @@ const project4 = {
     "report-link": "documents/id_4.pdf",
     "website": false,
     "website-link": "https://lifb20.github.io/Portfolio/",
+    "demo": false,
+    "demo-link": "demo-link",
 
     "img-src": "img/id_4.png",
 
@@ -257,8 +267,10 @@ const project5 = {
     "gitHub-link": "https://github.com/lifb20/Machine-Learning-Coursework",
     "report": true,
     "report-link": "documents/id_5.pdf",
-    "website": true,
-    "website-link": "documents/demo_5.mp4",
+    "website": false,
+    "website-link": "",
+    "demo": true,
+    "demo-link": "documents/demo_5.mp4",
 
     "img-src": "img/id_5.png",
 
@@ -299,6 +311,8 @@ const project6 = {
     "report-link": "documents/id_6.jpg",
     "website": false,
     "website-link": "",
+    "demo": false,
+    "demo-link": "demo-link",
 
     "img-src": "img/id_6.jpg",
 
@@ -339,6 +353,8 @@ const project7 = {
     "report-link": "documents/id_7.pdf",
     "website": false,
     "website-link": "",
+    "demo": false,
+    "demo-link": "demo-link",
 
     "img-src": "img/id_7.png",
 
@@ -380,6 +396,8 @@ const project8 = {
     "report-link": "documents/id_8.pdf",
     "website": false,
     "website-link": "",
+    "demo": false,
+    "demo-link": "demo-link",
 
     "img-src": "img/id_8.png",
 
@@ -406,7 +424,7 @@ const project9 = {
 
     // Box content
     "title": "Patient Voice AI – Flask App",
-    "tags": ["ALL", "FEATURED", "GROUP", "DL", "FRONTEND", "BACKEND", "DL", "PYTHON", "JS"],
+    "tags": ["ALL", "FEATURED", "GROUP", "FRONTEND", "BACKEND", "DL", "PYTHON", "JS"],
     "img-source": 'img/id_9.png',
 
     // Modal content
@@ -420,6 +438,8 @@ const project9 = {
     "report-link": "documents/id_9.pdf",
     "website": false,
     "website-link": "",
+    "demo": true,
+    "demo-link": "documents/demo_9.mov",
 
     "img-src": "img/id_9.png",
 
@@ -441,10 +461,51 @@ const project9 = {
     "info-list-three-items": ["Flask", "Tensorflow/Keras"],
 }
 
+const project10 = {
+    // Unique project ID
+    "id": "10",
+
+    // Box content
+    "title": "ASLearn – Hackathon",
+    "tags": ["ALL", "FEATURED", "GROUP", "DL", "PYTHON"],
+    "img-source": 'img/id_10.jpeg',
+
+    // Modal content
+    "setting": "Setting: ICHackathon",
+    "date": "Date: 04/02/24",
+    "type": "Type: Group",
+
+    "gitHub": false,
+    "gitHub-link": "https://github.com/torpeyl/Group-16-Project-MFTECH-Patient-Voice-AI",
+    "report": false,
+    "report-link": "documents/id_9.pdf",
+    "website": true,
+    "website-link": "https://devpost.com/software/aslearn-lftr3m",
+    "demo": false,
+    "demo-link": "documents/demo_9.mov",
+
+    "img-src": "img/id_10.jpeg",
+
+    "description": ["23"],
+
+    "info-list-one-toggle": true,
+    "info-list-one-title": 'Features: ',
+    "info-list-one-items": ["CNN-based sign language identification", "Gamified for classroom settings"],
+
+    "info-list-two-toggle": true,
+    "info-list-two-title": 'Languages/Frameworks used:',
+    "info-list-two-items": ["Python", "Tensorflow/Keras"],
+
+    "info-list-three-toggle": false,
+    "info-list-three-title": 'Libraries/Frameworks used:',
+    "info-list-three-items": ["Tensorflow/Keras"],
+}
+
 
 const content = [project1, project2, project3,
                  project4, project5, project6,
-                 project7, project8, project9];
+                 project7, project8, project9,
+                 project10];
 
 const contentObjects = content.map( contentItem => 
     new Project(contentItem)

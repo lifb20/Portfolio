@@ -206,6 +206,24 @@ class Project {
                                     extraTextRightContainerThree.appendChild(websiteText);
                             }
 
+                            if(jsonObject['demo']){
+                                let extraTextRightContainerThree = document.createElement('a');
+                                extraTextRightContainerThree.classList.add('extra-text-right-cont', 'blue');
+                                extraTextRightContainerThree.href = jsonObject["demo-link"];
+                                extraTextRightContainerThree.target = "_blank";
+                                extraRight.appendChild(extraTextRightContainerThree);
+
+                                    let websiteImg = document.createElement('img');
+                                    websiteImg.classList.add('report-icon');
+                                    websiteImg.src = "icon/web-icon.svg";
+                                    extraTextRightContainerThree.appendChild(websiteImg);
+
+                                    let websiteText = document.createElement('p');
+                                    websiteText.classList.add('extra-text-right');
+                                    websiteText.innerHTML = 'Demo';
+                                    extraTextRightContainerThree.appendChild(websiteText);
+                            }
+
                 let imageContainer = document.createElement('div');
                 imageContainer.classList.add('image-container', 'blue');
                 modalImageTitleExtraContainer.appendChild(imageContainer);
