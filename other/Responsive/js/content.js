@@ -308,7 +308,7 @@ const project6 = {
     "gitHub": false,
     "gitHub-link": "https://github.com/samin50/Wall-EE",
     "report": true,
-    "report-link": "documents/id_6.jpg",
+    "report-link": "documents/id_6.pdf",
     "website": false,
     "website-link": "",
     "demo": false,
