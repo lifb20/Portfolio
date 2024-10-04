@@ -1,0 +1,3 @@
+# Portfolio Website
+
+Welcome to my portfolio website's repository! Written in HTML, CSS and JavaScript, this website allows you to display a variety of projects with a filter bar. Despite being written in 'vanilla' JavaScript, the page remains a single-page application. Furthermore, its object-oriented design means new projects can be added with ease and minimal extra code. Feel free to use the code and customise your own website!
